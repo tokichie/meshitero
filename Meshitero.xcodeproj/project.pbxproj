@@ -8,11 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		6DC5E2E219D6B42C00C05D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E2E119D6B42C00C05D69 /* AppDelegate.swift */; };
-		6DC5E2E419D6B42C00C05D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E2E319D6B42C00C05D69 /* ViewController.swift */; };
+		6DC5E2E419D6B42C00C05D69 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E2E319D6B42C00C05D69 /* MainViewController.swift */; };
 		6DC5E2E719D6B42C00C05D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC5E2E519D6B42C00C05D69 /* Main.storyboard */; };
 		6DC5E2E919D6B42C00C05D69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC5E2E819D6B42C00C05D69 /* Images.xcassets */; };
 		6DC5E2EC19D6B42C00C05D69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DC5E2EA19D6B42C00C05D69 /* LaunchScreen.xib */; };
 		6DC5E2F819D6B42C00C05D69 /* MeshiteroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E2F719D6B42C00C05D69 /* MeshiteroTests.swift */; };
+		6DC5E30219D6B43E00C05D69 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E30119D6B43E00C05D69 /* AudioToolbox.framework */; };
+		6DC5E30419D6B44F00C05D69 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E30319D6B44F00C05D69 /* CFNetwork.framework */; };
+		6DC5E30619D6B45300C05D69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E30519D6B45300C05D69 /* CoreGraphics.framework */; };
+		6DC5E30819D6B45800C05D69 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E30719D6B45800C05D69 /* CoreLocation.framework */; };
+		6DC5E30A19D6B45E00C05D69 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E30919D6B45E00C05D69 /* libz.dylib */; };
+		6DC5E30C19D6B46300C05D69 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E30B19D6B46300C05D69 /* MobileCoreServices.framework */; };
+		6DC5E30E19D6B46900C05D69 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E30D19D6B46900C05D69 /* QuartzCore.framework */; };
+		6DC5E31019D6B46E00C05D69 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E30F19D6B46E00C05D69 /* Security.framework */; };
+		6DC5E31219D6B47200C05D69 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E31119D6B47200C05D69 /* StoreKit.framework */; };
+		6DC5E31419D6B47800C05D69 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E31319D6B47800C05D69 /* SystemConfiguration.framework */; };
+		6DC5E31819D6B4FE00C05D69 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E31719D6B4FE00C05D69 /* Parse.framework */; };
+		6DC5E31B19D6B52300C05D69 /* CustomClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E31A19D6B52300C05D69 /* CustomClass.m */; };
+		6DC5E32119D6E19300C05D69 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC5E32019D6E19300C05D69 /* Bolts.framework */; };
+		6DD6958019D79C2E001E4933 /* bg_tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6957E19D79C2E001E4933 /* bg_tile.png */; };
+		6DD6958119D79C2E001E4933 /* meshitero.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6957F19D79C2E001E4933 /* meshitero.png */; };
+		6DD6958319D7B412001E4933 /* TableViewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD6958219D7B411001E4933 /* TableViewCustomCell.xib */; };
+		6DD6958619D7B739001E4933 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6958519D7B739001E4933 /* CustomTableViewCell.swift */; };
+		6DD6958819D7D210001E4933 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD6958719D7D210001E4933 /* TimelineTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +47,32 @@
 		6DC5E2DC19D6B42C00C05D69 /* Meshitero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meshitero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC5E2E019D6B42C00C05D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DC5E2E119D6B42C00C05D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6DC5E2E319D6B42C00C05D69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DC5E2E319D6B42C00C05D69 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6DC5E2E619D6B42C00C05D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DC5E2E819D6B42C00C05D69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6DC5E2EB19D6B42C00C05D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6DC5E2F119D6B42C00C05D69 /* MeshiteroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeshiteroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC5E2F619D6B42C00C05D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DC5E2F719D6B42C00C05D69 /* MeshiteroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshiteroTests.swift; sourceTree = "<group>"; };
+		6DC5E30119D6B43E00C05D69 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6DC5E30319D6B44F00C05D69 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6DC5E30519D6B45300C05D69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6DC5E30719D6B45800C05D69 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6DC5E30919D6B45E00C05D69 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6DC5E30B19D6B46300C05D69 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6DC5E30D19D6B46900C05D69 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6DC5E30F19D6B46E00C05D69 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6DC5E31119D6B47200C05D69 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6DC5E31319D6B47800C05D69 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6DC5E31719D6B4FE00C05D69 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		6DC5E31919D6B52300C05D69 /* Meshitero-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Meshitero-Bridging-Header.h"; sourceTree = "<group>"; };
+		6DC5E31A19D6B52300C05D69 /* CustomClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomClass.m; sourceTree = "<group>"; };
+		6DC5E32019D6E19300C05D69 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		6DD6957E19D79C2E001E4933 /* bg_tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_tile.png; sourceTree = "<group>"; };
+		6DD6957F19D79C2E001E4933 /* meshitero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meshitero.png; sourceTree = "<group>"; };
+		6DD6958219D7B411001E4933 /* TableViewCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCustomCell.xib; sourceTree = "<group>"; };
+		6DD6958519D7B739001E4933 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		6DD6958719D7D210001E4933 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +80,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DC5E31419D6B47800C05D69 /* SystemConfiguration.framework in Frameworks */,
+				6DC5E31219D6B47200C05D69 /* StoreKit.framework in Frameworks */,
+				6DC5E31019D6B46E00C05D69 /* Security.framework in Frameworks */,
+				6DC5E32119D6E19300C05D69 /* Bolts.framework in Frameworks */,
+				6DC5E30E19D6B46900C05D69 /* QuartzCore.framework in Frameworks */,
+				6DC5E30C19D6B46300C05D69 /* MobileCoreServices.framework in Frameworks */,
+				6DC5E30A19D6B45E00C05D69 /* libz.dylib in Frameworks */,
+				6DC5E30819D6B45800C05D69 /* CoreLocation.framework in Frameworks */,
+				6DC5E30619D6B45300C05D69 /* CoreGraphics.framework in Frameworks */,
+				6DC5E30419D6B44F00C05D69 /* CFNetwork.framework in Frameworks */,
+				6DC5E30219D6B43E00C05D69 /* AudioToolbox.framework in Frameworks */,
+				6DC5E31819D6B4FE00C05D69 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +108,16 @@
 		6DC5E2D319D6B42C00C05D69 = {
 			isa = PBXGroup;
 			children = (
+				6DC5E31319D6B47800C05D69 /* SystemConfiguration.framework */,
+				6DC5E31119D6B47200C05D69 /* StoreKit.framework */,
+				6DC5E30F19D6B46E00C05D69 /* Security.framework */,
+				6DC5E30D19D6B46900C05D69 /* QuartzCore.framework */,
+				6DC5E30B19D6B46300C05D69 /* MobileCoreServices.framework */,
+				6DC5E30919D6B45E00C05D69 /* libz.dylib */,
+				6DC5E30719D6B45800C05D69 /* CoreLocation.framework */,
+				6DC5E30519D6B45300C05D69 /* CoreGraphics.framework */,
+				6DC5E30319D6B44F00C05D69 /* CFNetwork.framework */,
+				6DC5E30119D6B43E00C05D69 /* AudioToolbox.framework */,
 				6DC5E2DE19D6B42C00C05D69 /* Meshitero */,
 				6DC5E2F419D6B42C00C05D69 /* MeshiteroTests */,
 				6DC5E2DD19D6B42C00C05D69 /* Products */,
@@ -77,12 +136,21 @@
 		6DC5E2DE19D6B42C00C05D69 /* Meshitero */ = {
 			isa = PBXGroup;
 			children = (
+				6DD6957E19D79C2E001E4933 /* bg_tile.png */,
+				6DD6957F19D79C2E001E4933 /* meshitero.png */,
+				6DC5E32019D6E19300C05D69 /* Bolts.framework */,
+				6DC5E31719D6B4FE00C05D69 /* Parse.framework */,
 				6DC5E2E119D6B42C00C05D69 /* AppDelegate.swift */,
-				6DC5E2E319D6B42C00C05D69 /* ViewController.swift */,
+				6DC5E2E319D6B42C00C05D69 /* MainViewController.swift */,
 				6DC5E2E519D6B42C00C05D69 /* Main.storyboard */,
 				6DC5E2E819D6B42C00C05D69 /* Images.xcassets */,
 				6DC5E2EA19D6B42C00C05D69 /* LaunchScreen.xib */,
 				6DC5E2DF19D6B42C00C05D69 /* Supporting Files */,
+				6DC5E31A19D6B52300C05D69 /* CustomClass.m */,
+				6DC5E31919D6B52300C05D69 /* Meshitero-Bridging-Header.h */,
+				6DD6958219D7B411001E4933 /* TableViewCustomCell.xib */,
+				6DD6958519D7B739001E4933 /* CustomTableViewCell.swift */,
+				6DD6958719D7D210001E4933 /* TimelineTableViewController.swift */,
 			);
 			path = Meshitero;
 			sourceTree = "<group>";
@@ -161,6 +229,7 @@
 				TargetAttributes = {
 					6DC5E2DB19D6B42C00C05D69 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = D57PZWU7LZ;
 					};
 					6DC5E2F019D6B42C00C05D69 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -192,6 +261,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD6958019D79C2E001E4933 /* bg_tile.png in Resources */,
+				6DD6958119D79C2E001E4933 /* meshitero.png in Resources */,
+				6DD6958319D7B412001E4933 /* TableViewCustomCell.xib in Resources */,
 				6DC5E2E719D6B42C00C05D69 /* Main.storyboard in Resources */,
 				6DC5E2EC19D6B42C00C05D69 /* LaunchScreen.xib in Resources */,
 				6DC5E2E919D6B42C00C05D69 /* Images.xcassets in Resources */,
@@ -212,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC5E2E419D6B42C00C05D69 /* ViewController.swift in Sources */,
+				6DD6958619D7B739001E4933 /* CustomTableViewCell.swift in Sources */,
+				6DC5E2E419D6B42C00C05D69 /* MainViewController.swift in Sources */,
 				6DC5E2E219D6B42C00C05D69 /* AppDelegate.swift in Sources */,
+				6DD6958819D7D210001E4933 /* TimelineTableViewController.swift in Sources */,
+				6DC5E31B19D6B52300C05D69 /* CustomClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +347,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 佑太 時武 (675PCRS7C8)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -289,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -315,7 +391,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -326,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,9 +415,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tokitake/Downloads/parse-library-1.4.1",
+					"$(PROJECT_DIR)/Meshitero",
+				);
 				INFOPLIST_FILE = Meshitero/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Meshitero/Meshitero-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -348,9 +435,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/tokitake/Downloads/parse-library-1.4.1",
+					"$(PROJECT_DIR)/Meshitero",
+				);
 				INFOPLIST_FILE = Meshitero/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Meshitero/Meshitero-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -407,6 +503,7 @@
 				6DC5E2FD19D6B42C00C05D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DC5E2FE19D6B42C00C05D69 /* Build configuration list for PBXNativeTarget "MeshiteroTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +512,7 @@
 				6DC5E30019D6B42C00C05D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

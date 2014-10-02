@@ -16,7 +16,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.setApplicationId("cwEkdkZ9DD50I7rA4y1fFrNghfSpxATwXH0YTOFX", clientKey: "uQ5wCd2da8qb3GZ3Ahr35tGXXgcwrKCNOda3czB2")
+        
+        application.registerForRemoteNotificationTypes(
+            UIRemoteNotificationType.Badge |
+            UIRemoteNotificationType.Alert |
+            UIRemoteNotificationType.Sound
+        )
+        
         return true
+    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData ) {
+        // <>と" "(空白)を取る
+        var characterSet: NSCharacterSet = NSCharacterSet( charactersInString: "<>" )
+        
+        var deviceTokenString: String = ( deviceToken.description as NSString )
+            .stringByTrimmingCharactersInSet( characterSet )
+            .stringByReplacingOccurrencesOfString( " ", withString: "" ) as String
+        
+        println( deviceTokenString )
+        
+        var currentInstallation: PFInstallation = PFInstallation.currentInstallation()
+        currentInstallation.setDeviceTokenFromData(deviceToken)
+        currentInstallation.saveInBackground()
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError ) {
+        println(error.description)
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: NSDictionary) {
+        PFPush.handlePush(userInfo)
     }
 
     func applicationWillResignActive(application: UIApplication) {
